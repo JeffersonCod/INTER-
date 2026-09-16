@@ -6,10 +6,10 @@
    ============================================================ */
 
 :root{
-  --ink:        #f7f8fa;   /* azul-marinho profundo (texto) */
+  --ink:        #082F55;   /* azul-marinho profundo (texto) */
   --deep:       #1C3C6E;   /* azul-marinho da marca */
   --sky:        #3E93C9;   /* azul-céu da gota */
-  --sky-light:  #8FC6E8;   /* azul-céu claro */
+  --sky-light:  #D8E2E9;   /* azul-céu claro */
   --silver:     #A7ADB3;   /* prata da gota */
   --bg:         #F5F8FA;   /* fundo — água clara */
   --panel:      #FFFFFF;
@@ -203,6 +203,7 @@ a{ color: inherit; text-decoration: none; }
   margin-bottom: 22px;
   opacity: 0;
   animation: rise .7s ease forwards .25s;
+  color: #fff;
 }
 .hero-lede{
   font-size: 18px;
