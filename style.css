@@ -147,8 +147,8 @@ a{ color: inherit; text-decoration: none; }
   font-size: 15px;
   font-weight: 600;
 }
-.site-nav a{ color: var(--ink); }
-.site-nav a:hover{ color: var(--sky); }
+.site-nav, .link-nossas-acoes a{ color: var(--ink); }
+.site-nav a:hover, .link-nossas-acoes a:hover{ color: var(--sky); }
 .nav-cta{
   background: var(--deep);
   color: #fff !important;
@@ -380,7 +380,6 @@ a{ color: inherit; text-decoration: none; }
 @media (max-width: 700px){
   .activity-list{ grid-template-columns: 1fr; }
 }
-
 /* ---------- Voluntariado ---------- */
 .voluntariado{ padding: 88px 0; background: var(--bg); }
 .voluntariado-inner{
@@ -604,3 +603,86 @@ a{ color: inherit; text-decoration: none; }
   .site-nav a{ width: 100%; padding: 12px 0; border-bottom: 1px solid var(--line); }
   .nav-cta{ margin-top: 10px; text-align: center; }
 }
+
+/* ---------- Nossas ações ---------- */
+
+.acoes-hero{
+  background: linear-gradient(180deg, var(--deep) 0%, #234a86 55%, var(--sky) 130%);
+  color: #fff;
+  padding: 130px 0 64px;
+}
+.breadcrumb{
+  font-size: 13.5px;
+  color: var(--sky-light);
+  margin-bottom: 18px;
+}
+.breadcrumb a{ color: #fff; font-weight: 600; }
+.breadcrumb a:hover{ color: var(--sky-light); }
+.acoes-hero h1{
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 14px;
+}
+.acoes-hero p{
+  font-size: 17px;
+  color: #E7F0F7;
+  max-width: 52ch;
+}
+
+.acoes-section{
+  padding: 80px 0 96px;
+  background: var(--bg);
+}
+.acoes-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.acao-card{
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.acao-photo{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.acao-body{
+  padding: 22px 20px 26px;
+}
+.acao-body h3{
+  font-size: 18.5px;
+  margin-bottom: 8px;
+}
+.acao-body p{
+  color: #43526B;
+  font-size: 15px;
+}
+
+/* Entrada da página nossas-acoes.html */
+.acoes-hero .breadcrumb,
+.acoes-hero h1,
+.acoes-hero p{
+  opacity: 0;
+  animation: rise .7s ease forwards;
+}
+.acoes-hero .breadcrumb{ animation-delay: .1s; }
+.acoes-hero h1{ animation-delay: .25s; }
+.acoes-hero p{ animation-delay: .4s; }
+
+.acao-card{
+  opacity: 0;
+  animation: rise .6s ease forwards;
+}
+.acao-card:nth-child(1){ animation-delay: .1s; }
+.acao-card:nth-child(2){ animation-delay: .18s; }
+.acao-card:nth-child(3){ animation-delay: .26s; }
+.acao-card:nth-child(4){ animation-delay: .34s; }
+.acao-card:nth-child(5){ animation-delay: .42s; }
+.acao-card:nth-child(6){ animation-delay: .5s; }
+.acao-card:nth-child(7){ animation-delay: .58s; }
