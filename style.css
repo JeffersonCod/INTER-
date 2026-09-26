@@ -686,3 +686,22 @@ a{ color: inherit; text-decoration: none; }
 .acao-card:nth-child(5){ animation-delay: .42s; }
 .acao-card:nth-child(6){ animation-delay: .5s; }
 .acao-card:nth-child(7){ animation-delay: .58s; }
+
+/*Responsividade nossas-acoes.html*/
+
+@media (max-width: 900px){
+  .acoes-grid{
+    grid-template-columns: repeat(2,1 fr);
+  }
+}
+@media (max-width: 600px){
+  .acoes-grid{
+    grid-template-columns: 1fr;
+  }
+  .acoes-hero{
+    padding: 110px 0 48px;
+  }
+  .acoes-hero h1{
+    font-size: 2rem;
+  }
+}
